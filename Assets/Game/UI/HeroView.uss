@@ -1,0 +1,24 @@
+.hero-container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.stat {
+    font-size: 18px;
+    color: #ddd;
+    margin: 5px 0;
+}
+
+.button {
+    margin-top: 20px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+}

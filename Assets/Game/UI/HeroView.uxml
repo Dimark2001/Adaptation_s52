@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game/UI/HeroView.uss?fileID=7433441132597879392&amp;guid=98d28ad366bbcb844b5d54aa3286bc12&amp;type=3#HeroView" />
+    <ui:VisualElement name="Container" class="hero-container" style="bottom: auto; position: relative; top: 50%; left: 50%; right: auto; flex-direction: column; flex-wrap: nowrap; -unity-background-scale-mode: scale-to-fit; visibility: visible; display: flex; overflow: visible; opacity: 1; flex-basis: auto; align-items: center; align-self: stretch; width: 300px;">
+        <ui:Label text="Hero Stats" class="title" />
+        <ui:Label name="level-label" class="stat" />
+        <ui:Button name="upgrade-button" text="Upgrade Hero" class="button" />
+    </ui:VisualElement>
+</ui:UXML>
