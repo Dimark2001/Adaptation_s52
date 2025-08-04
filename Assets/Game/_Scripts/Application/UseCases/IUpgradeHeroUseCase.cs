@@ -1,4 +1,4 @@
-﻿namespace Game._Scripts.Interfaces
+﻿namespace Game._Scripts.Application.UseCases
 {
     public interface IUpgradeHeroUseCase
     {

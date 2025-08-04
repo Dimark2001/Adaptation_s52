@@ -1,5 +1,4 @@
 ﻿using System;
-using Game._Scripts.Interfaces;
 using R3;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -24,10 +23,12 @@ namespace Game._Scripts.Presentation
         {
             var root = _uiDocument.rootVisualElement;
             var levelLabel = root.Q<Label>("level-label");
+            var attackLabel = root.Q<Label>("attack-label");
             var upgradeButton = root.Q<Button>("upgrade-button");
 
             upgradeButton.clicked += () => _presenter.UpgradeHero();
             _levelSubscription = _presenter.HeroLevel.Subscribe(level => levelLabel.text = $"Level: {level}");
+            _levelSubscription = _presenter.HeroAttack.Subscribe(attack => attackLabel.text = $"Attack: {attack}");
         }
 
         public void Dispose()

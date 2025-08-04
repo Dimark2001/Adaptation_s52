@@ -1,9 +1,8 @@
 ﻿using Game._Scripts.Domain.Models;
-using Game._Scripts.Interfaces;
 using MessagePipe;
 using VContainer;
 
-namespace Game._Scripts.UseCases
+namespace Game._Scripts.Application.UseCases
 {
     public class UpgradeHeroUseCase : IUpgradeHeroUseCase
     {

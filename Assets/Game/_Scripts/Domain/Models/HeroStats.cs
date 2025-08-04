@@ -7,24 +7,30 @@ namespace Game._Scripts.Domain.Models
     public class HeroStats : ICloneable
     {
         [field: SerializeField]
-        public int Level { get; private set; }
+        public uint Level { get; private set; }
 
         [field: SerializeField]
         public int MaxLevel { get; private set; }
-        
+
         [field: SerializeField]
         public int Attack { get; private set; }
 
         public void Upgrade()
         {
-            Level = Mathf.Clamp(Level + 1, 1, MaxLevel);
+            if (Level >= MaxLevel)
+            {
+                return;
+            }
+
+            Level += 1;
+            Attack += 10;
         }
 
         public object Clone()
         {
             return new HeroStats
             {
-                Level = Level, 
+                Level = Level,
                 MaxLevel = MaxLevel,
                 Attack = Attack,
             };
