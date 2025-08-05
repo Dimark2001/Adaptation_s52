@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Game._Scripts.Domain.Models
 {
     [Serializable]
-    public class HeroStats : ICloneable
+    public class HeroStats : IHeroStats, ICloneable
     {
         [field: SerializeField]
         public uint Level { get; private set; }

@@ -9,6 +9,6 @@ namespace Game._Scripts.Domain.Configs
         [field: SerializeField]
         public HeroStats Model { get; private set; }
 
-        public HeroModel CreateModel() => new((HeroStats)Model.Clone());
+        public IHeroModel CreateModel() => new HeroModel((IHeroStats)Model.Clone());
     }
 }
